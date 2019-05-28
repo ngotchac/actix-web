@@ -19,12 +19,12 @@ path = "src/lib.rs"
 
 [dependencies]
 actix = "0.8.2"
-actix-web = "1.0.0-beta.5"
-actix-http = "0.2.0"
+actix-web = { path = "../", version = "1.0.0-beta.5" }
+actix-http = { path = "../actix-http", version = "0.2.0" }
 actix-codec = "0.1.2"
 bytes = "0.4"
 futures = "0.1.25"
 
 [dev-dependencies]
 env_logger = "0.6"
-actix-http-test = { version = "0.2.0", features=["ssl"] }
+actix-http-test = { path = "../test-server", version = "0.2.0", features=["ssl"] }
